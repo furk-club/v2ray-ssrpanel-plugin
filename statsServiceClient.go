@@ -60,6 +60,6 @@ func (s *StatsServiceClient) getUserIPStats(email string, reset bool) (string, e
 
 		return "", err
 	}
-
-	return res.Value, nil
+	return "0.0.0.0", nil
+	//return res.Value, nil
 }
